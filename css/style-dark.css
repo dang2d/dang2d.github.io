@@ -1072,6 +1072,19 @@ blockquote:before,
 			transform: translateY(-50%);
 }
 
+	.pt-home .banner .profile-img {
+		display: inline-block;
+		  margin-bottom: 30px;
+	}
+
+		.pt-home .banner .profile-img img {
+			width: 150px;
+			height: 150px;
+			-webkit-border-radius: 50%;
+			border-radius: 50%;
+			border: 3px solid #dfdfdf;
+		}
+
 .pt-home .banner h1 {
 	color: #fff;
 	margin-bottom: 15px;
@@ -1112,11 +1125,24 @@ blockquote:before,
 			transform: scale(1.3);
 }
 
+/* Copyright */
+.pt-home .copy {
+	position: absolute;
+	bottom: 15px;
+	right: 40px;
+	z-index: 1;
+	color: #fff;
+}
+
 /* Language */
 .pt-home .lang {
 	position: absolute;
     bottom: 30px;
     z-index: 1;
+}
+
+.pt-home .lang .copy {
+	display: inline-block;
 }
 
 .pt-home .lang ul {
