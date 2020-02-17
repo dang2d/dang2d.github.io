@@ -32,7 +32,8 @@ $(window).on('load', function() {
 	/* -----------------------------------
 				1. Preloader
 	----------------------------------- */
-	$("#preloader").delay(1000).addClass('loaded');
+    $("#preloader").delay(1000).addClass('loaded');
+    /*-- $(window).on("load",function(){if($(".loading-text").delay(1e3).fadeOut("slow"),$(".preload").delay(2e3).fadeOut("slow"); --*/
 	
 	/* -----------------------------------
 			  2. Sound Setup
