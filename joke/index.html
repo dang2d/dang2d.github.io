@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('background.jpg'); /* Thay thế bằng URL hình nền của bạn */
+            background-size: cover;
+            padding: 50px;
+        }
+        .joke-text {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            display: inline-block;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .emojis {
+            font-size: 3em;
+            background: rgba(255, 255, 255, 0.8);
+            display: inline-block;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="joke-text">Hi. I'm Dang
+	<p>😄😂🤣</div>
+	<p>
+    <div class="emojis">🎉🎈🤪😜🙃</div>
+
+    <script>
+        const emojis = document.querySelector('.emojis');
+        const emojiList = ['😄', '😂', '🤣', '🎉', '🎈', '🤪', '😜', '🙃', '😎', '🦄', '🐱‍👤', '👻'];
+        let emojiCount = 0;
+        const maxEmojis = 80;
+
+        function addRandomEmoji() {
+            if (emojiCount >= maxEmojis) {
+                clearInterval(emojiInterval);
+                return;
+            }
+            const randomEmoji = emojiList[Math.floor(Math.random() * emojiList.length)];
+            emojis.innerHTML += ' ' + randomEmoji;
+            emojiCount++;
+        }
+
+        const emojiInterval = setInterval(addRandomEmoji, 1000);
+    </script>
+</body>
+</html>
