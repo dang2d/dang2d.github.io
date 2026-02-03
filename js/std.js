@@ -1,6 +1,7 @@
 [{
 	"name": "Auto Input Gold STD",
-	"version": 19
+	"version": 21
 	"url": "https://www.helmut-fischer.vn"
 
 }]
+
